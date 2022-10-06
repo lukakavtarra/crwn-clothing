@@ -11,6 +11,7 @@
   right: 40px;
   z-index: 5;
 
+
   .empty-message {
     font-size: 18px;
     margin: 50px auto;
@@ -20,7 +21,13 @@
     height: 240px;
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow: scroll;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+  &::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+    
+  }
   }
 
   button {
